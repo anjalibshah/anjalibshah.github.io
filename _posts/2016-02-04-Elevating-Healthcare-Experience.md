@@ -16,7 +16,7 @@ To help answer this question, I partnered with NYC-based startup that collects p
 
 ### Data and Methods
 
-![Algorithm Stages Pipeline.png]({{site.baseurl}}/_posts/Algorithm Stages Pipeline.png)
+![]({{site.baseurl}}/_posts/Algorithm%20Stages%20Pipeline.png)
 
 The first step was to segragate data specific to each organization, extract the features of importance and weed out missing values. 
 
