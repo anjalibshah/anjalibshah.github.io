@@ -18,7 +18,17 @@ To help answer this question, I partnered with NYC-based startup that collects p
 
 ![]({{site.baseurl}}/_posts/Algorithm%20Stages%20Pipeline.png)
 
-The first step was to segragate data specific to each organization, extract the features of importance and weed out missing values. 
+The first step was to segragate data specific to each organization, extract the features of importance and weed out missing values. I derived the following features to drive my analyses:
+
+1. Patients seen by a provider in a day
+2. Day of the week
+3. Net promoter score
+
+Net promoter score (NPS) is based on raw score provided by patients on feedback surveys. It a percentage that can range from -100 to +100 depending on the percentage of attractor scores (raw score of 9 or 10) and detractor scores (raw scores from 0 to 6). 
+
+I used kernel density estimation with Gaussian kernel to study the underlying distribution of the NPS percentages by the patients seen per day metric. It helped me visualize that probability density of NPS for good scores by number of patients seen in a day. I performed binarization of NPS to classify percentages greater than or equal to 90 as good scores and those below 90 as bad scores.
+
+
 
 ### Actionable Insights
 
