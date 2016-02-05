@@ -32,9 +32,15 @@ I used kernel density estimation with Gaussian kernel to study the underlying di
 
 I plotted the distribution of good scores versus bad scores by patients seen per day. By performing Mann-Whitney U test, I was able to see a statistically significant difference between the means of the two groups. At 95% confidence level about the mean, I was able to find the interval for number of patients a provider should see in a day for good scores and also the interval for bad scores. This helped me arrive at a solution for the optimal number of patients a provider should see in a day without seeing a considerable drop in the scores.
 
+![Histogram_volume_nps_2.png]({{site.baseurl}}/images/Histogram_volume_nps_2.png)
+
 While working on the problem, I noticed a difference in the percentage of good scores to bad scores by day of the week. Combining day of the week information with the patients seen per day, I was able to build a logistic regression model to predict the chance of getting good scores with 65% accuracy.
 
-In order to maintain the optimal number of patients per provider, it is important to be able to gauge expected patient volumes and have optimal number of providers on site. In order to forecast patient volume, I used time series analysis to study past temporal trends in the volume. Using auto regressive (AR) as well as auto regressive and moving average (ARMA) models, I was able to perform 1-step forecasting of volume by month and volume by week respectively with a mean absolute percentage error of about 17%
+![ROC.png]({{site.baseurl}}/images/ROC.png)
+
+In order to maintain the optimal number of patients per provider, it is important to be able to gauge expected patient volumes and have optimal number of providers on site. In order to forecast patient volume, I used time series analysis to study past temporal trends in the volume. Using auto regressive (AR) as well as auto regressive and moving average (ARMA) models, I was able to perform 1-step forecasting of volume by month and volume by week respectively with a mean absolute percentage error of about 17%.
+
+![Forecastmonth_saturdays.png]({{site.baseurl}}/images/Forecastmonth_saturdays.png)
 
 ### Actionable Insights
 
