@@ -2,7 +2,9 @@
 layout: post
 title: "Elevating Healthcare Experience: Leveraging Patient Feedback Data"
 published: true
+tags: null
 ---
+
 
 ### Problem: What is the optimal number of patients a provider should see in a day?
 
@@ -16,7 +18,7 @@ To help answer this question, I partnered with NYC-based startup that collects p
 
 ### Data and Methods
 
-![]({{site.baseurl}}/_posts/Algorithm%20Stages%20Pipeline.png)
+![Algorithm Stages Pipeline.png]({{site.baseurl}}/images/Algorithm Stages Pipeline.png)
 
 The first step was to segragate data specific to each organization, extract the features of importance and weed out missing values. I derived the following features to drive my analyses:
 
