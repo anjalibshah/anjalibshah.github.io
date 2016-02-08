@@ -58,4 +58,10 @@ In order to maintain the optimal number of patients per provider, it is importan
 
 ### Putting It All Together
 
-The final product (outcome of my analyses) focuses on using 
+The final product (outcome of my analyses) focuses on using the following three models to solve the problem:
+
+1. Mann-Whitney U test to determine the optimal number of patients per provider
+2. Forecasting patient volume to have enough providers onsite to maintain 	optimum patients per provider ratios
+3. Logistic regression model to determine the probability of receiving good scores by day of the week and patients per provider ratio.
+
+
