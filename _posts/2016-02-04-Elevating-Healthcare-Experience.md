@@ -36,9 +36,9 @@ I plotted the distribution of good scores versus bad scores by patients seen per
 
 ![Histogram_volume_nps_2.png]({{site.baseurl}}/images/Histogram_volume_nps_2.png)
 
-While working on the problem, I noticed a difference in the percentage of good scores to bad scores by day of the week. Combining day of the week information with the patients seen per day, I was able to build a logistic regression model to predict the chance of getting good scores with 65% accuracy.
+While working on the problem, I noticed a difference in the percentage of good scores to bad scores by day of the week. Combining day of the week information with the patients seen per day, I was able to build a logistic regression model to predict the chance of getting good scores with 67% accuracy.
 
-![ROC.png]({{site.baseurl}}/images/ROC.png)
+![AUC_ROC_LG.png]({{site.baseurl}}/images/AUC_ROC_LG.png)
 
 In order to maintain the optimal number of patients per provider, it is important to be able to gauge expected patient volumes and have optimal number of providers on site. In order to forecast patient volume, I used time series analysis to study past temporal trends in patient volume. Using auto regressive (AR) as well as auto regressive and moving average (ARMA) models, I was able to perform 1-step forecasting of volume by month and volume by week respectively with a mean absolute percentage error of about 17%.
 
@@ -46,8 +46,16 @@ In order to maintain the optimal number of patients per provider, it is importan
 
 ![Forecastmonth_saturdays.png]({{site.baseurl}}/images/Forecastmonth_saturdays.png)
 
-### Deep Dive: What led to choice of models in my analyses?
+### Deep Dive: What led me to the choice of models for my analyses?
 
+![VolumevsNPS.png]({{site.baseurl}}/images/VolumevsNPS.png)
 
+![Kernel_density_estimation_2.png]({{site.baseurl}}/images/Kernel_density_estimation_2.png)
+
+![Forecastmonth(AR1).png]({{site.baseurl}}/images/Forecastmonth(AR1).png)
+
+![Forecastweek_saturdays_unfit.png]({{site.baseurl}}/images/Forecastweek_saturdays_unfit.png)
 
 ### Putting It All Together
+
+The final product (outcome of my analyses) focuses on using 
