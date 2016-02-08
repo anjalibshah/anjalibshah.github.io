@@ -23,12 +23,12 @@ Prose:
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email:
+  email: anjalibshah@hotmail.com
   facebook:
   flickr:
   github: anjalibshah/insight-blog
   instagram:
-  linkedin:
+  linkedin: https://www.linkedin.com/in/anjalibshahphd
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: #jekyllrb
