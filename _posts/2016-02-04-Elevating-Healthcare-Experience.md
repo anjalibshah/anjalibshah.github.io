@@ -2,8 +2,10 @@
 layout: post
 title: "Elevating Healthcare Experience: Leveraging Patient Feedback Data"
 published: true
-tags: null
+tags: 
+  - "null"
 ---
+
 
 
 ### Problem: What is the optimal number of patients a provider should see in a day?
@@ -16,7 +18,7 @@ It may seem intuitive to think that the fewer patients each provider sees a day,
 
 To help answer this question, I partnered with NYC-based startup that collects patient feedback data for urgent care centers. 
 
-### Data and Methods
+### How I solved it? - Data and Methods
 
 ![Algorithm Stages Pipeline.png]({{site.baseurl}}/images/Algorithm Stages Pipeline.png)
 
@@ -28,7 +30,7 @@ The first step was to segragate data specific to each organization, extract the 
 
 Net promoter score (NPS) is based on raw score provided by patients on feedback surveys. It a percentage that can range from -100 to +100 depending on the percentage of attractor scores (raw score of 9 or 10) and detractor scores (raw scores from 0 to 6). 
 
-I used kernel density estimation with Gaussian kernel to study the underlying distribution of the NPS percentages by the patients seen per day metric. It helped me visualize that probability density of NPS for good scores by number of patients seen in a day. I performed binarization of NPS to classify percentages greater than or equal to 90 as good scores and those below 90 as bad scores.
+I used kernel density estimation with Gaussian kernel to study the underlying distribution of NPS percentages by patients seen per day metric. It helped me visualize that probability density of NPS by number of patients seen in a day. I performed binarization of NPS to classify percentages greater than or equal to 90 as good scores and those below 90 as bad scores.
 
 I plotted the distribution of good scores versus bad scores by patients seen per day. By performing Mann-Whitney U test, I was able to see a statistically significant difference between the means of the two groups. At 95% confidence level about the mean, I was able to find the interval for number of patients a provider should see in a day for good scores and also the interval for bad scores. This helped me arrive at a solution for the optimal number of patients a provider should see in a day without seeing a considerable drop in the scores.
 
@@ -38,20 +40,14 @@ While working on the problem, I noticed a difference in the percentage of good s
 
 ![ROC.png]({{site.baseurl}}/images/ROC.png)
 
-In order to maintain the optimal number of patients per provider, it is important to be able to gauge expected patient volumes and have optimal number of providers on site. In order to forecast patient volume, I used time series analysis to study past temporal trends in the volume. Using auto regressive (AR) as well as auto regressive and moving average (ARMA) models, I was able to perform 1-step forecasting of volume by month and volume by week respectively with a mean absolute percentage error of about 17%.
+In order to maintain the optimal number of patients per provider, it is important to be able to gauge expected patient volumes and have optimal number of providers on site. In order to forecast patient volume, I used time series analysis to study past temporal trends in patient volume. Using auto regressive (AR) as well as auto regressive and moving average (ARMA) models, I was able to perform 1-step forecasting of volume by month and volume by week respectively with a mean absolute percentage error of about 17%.
+
+![Forecastmonth.png]({{site.baseurl}}/images/Forecastmonth.png)
 
 ![Forecastmonth_saturdays.png]({{site.baseurl}}/images/Forecastmonth_saturdays.png)
 
-### Actionable Insights
+### Deep Dive: What led to choice of models in my analyses?
+
+
 
 ### Putting It All Together
-
-
-
-
-
-
-
-
-
-
