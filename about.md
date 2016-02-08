@@ -1,15 +1,14 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
 
-Some information about you!
+Hi! Thanks for viewing my blog post. I am currently a Fellow at Insight Data Science in New York City. At Insight, I have been working with a startup to leverage patient feedback data using data-driven approach to improve patients' healthcare experience.
 
-### More Information
+Before coming to Insight, I completed my Ph.D. in Biomedical Informatics at Rutgers University. I have over 10 years of professional experience across education, healthcare, financial services and telecom industries.
 
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[anjalibshah@hotmail.com](mailto:email@domain.com)
