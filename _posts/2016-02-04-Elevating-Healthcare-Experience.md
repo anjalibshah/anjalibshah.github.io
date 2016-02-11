@@ -9,6 +9,7 @@ tags:
 
 
 
+
 ### Problem: What is the optimal number of patients a provider should see in a day?
 
 For my Insight project, I wanted to work on solving a common problem that we encounter often. During out patient visits, many of us end up waiting for a long time to see the doctor. Ideally, patients should get to spend more time with the doctor in the exam room, which can elevate the overall healthcare experience. 
@@ -54,9 +55,8 @@ Scatterplot distribution of the NPS by patients seen per day as shown in the fig
 ![VisualizingData.png]({{site.baseurl}}/images/VisualizingData.png)
 
 Visualizing the probability density led me to study the differences in distribution of the good and bad scores and found statistically significant results (p-value = 0.000). Due to lack of perfect normality in the underlying distribution, I used non-parametric Mann-Whitney U test to compare differences in measure of central tendency (mean) between the two groups.  
-![Forecastmonth(AR1).png]({{site.baseurl}}/images/Forecastmonth(AR1).png)
 
-![Forecastweek_saturdays_unfit.png]({{site.baseurl}}/images/Forecastweek_saturdays_unfit.png)
+
 
 ### Putting It All Together
 
