@@ -50,7 +50,7 @@ In order to maintain the optimal number of patients per provider, it is importan
 ![ARMAWeekModified.png]({{site.baseurl}}/images/ARMAWeekModified.png)
 
 
-_Please note that some of the numbers and actual timelines have been obfuscated in the figure above to protect sensitive information of clients of the startup._
+_Please note that some of the numbers and actual timelines have been obfuscated in the figures above to protect sensitive information about clients of the startup._
 
 ### Deep Dive: What led me to the choice of models for my analyses?
 
