@@ -10,6 +10,7 @@ tags:
 
 
 
+
 ### Problem: What is the optimal number of patients a provider should see in a day?
 
 For my Insight project, I wanted to work on solving a common problem that we encounter often. During out patient visits, many of us end up waiting for a long time to see the doctor. Ideally, patients should get to spend more time with the doctor in the exam room, which can elevate the overall healthcare experience. 
@@ -18,7 +19,7 @@ This leads us to the question of my problem statement. How many patients should 
 
 It may seem intuitive to think that the fewer patients each provider sees a day, the better scores these providers and the healthcare organizations receive. In reality , however, these decisions are not as straightforward as they seem. Healthcare organizations need to maintain healthy cash flow margins to cover huge operating expenses. They need to maintain the right patients per provider ratios to stay in business. More specifically, the question then becomes: what is the optimal ratio that allows healthcare organizations to attend to the needs of all their patients and at the same time allow patients to have more time with their providers?
 
-To help answer this question, I partnered with NYC-based startup that collects patient feedback data for urgent care centers. 
+To help answer this question, I partnered with NYC-based startup that collects patient feedback data for outpatient clinics. 
 
 ### How I solved it? - Data and Methods
 
@@ -44,9 +45,12 @@ While working on the problem, I noticed a difference in the percentage of good s
 
 In order to maintain the optimal number of patients per provider, it is important to be able to gauge expected patient volumes and have optimal number of providers on site. In order to forecast patient volume, I used time series analysis to study past temporal trends in patient volume. Using auto regressive (AR) as well as auto regressive and moving average (ARMA) models, I was able to perform 1-step forecasting of volume by month and volume by week respectively with a mean absolute percentage error of about 17%.
 
-![Forecastmonth.png]({{site.baseurl}}/images/Forecastmonth.png)
+![ARMonthModified.png]({{site.baseurl}}/images/ARMonthModified.png)
 
-![Forecastmonth_saturdays.png]({{site.baseurl}}/images/Forecastmonth_saturdays.png)
+![ARMAWeekModified.png]({{site.baseurl}}/images/ARMAWeekModified.png)
+
+
+_Please note that some of the numbers and actual timelines have been obfuscated in the figure above to protect sensitive information of clients of the startup._
 
 ### Deep Dive: What led me to the choice of models for my analyses?
 
