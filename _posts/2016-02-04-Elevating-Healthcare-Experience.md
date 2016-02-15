@@ -72,9 +72,11 @@ Following is the example of a suboptimal fit for the data. I used the arma_order
 Following the results from executing arma_order_select_ic function and using an iterative process, I was able to fit the model with p=2 and q=0 for forecasting patient volume using monthly data. Similarly, I was able to fit the model using p=2 and q=1 for forecasting patient volume using weekly data. I used d=1 to obatin the first difference of the patient volume data, which helped fit the model on stationary time series and significantly reduced prediction errors.
 
 
+Before settling on the use of logistic regression model to classify scores into good and bad based on day-of-week and patients-per-provider features, I tried other classification models.
+
 ![PredictiveModelComparison.png]({{site.baseurl}}/images/PredictiveModelComparison.png)
 
-
+I compared the total running time for model fitting using logistic regression, gaussian naive bayes, linear support vector classification (SVC) and random forest classification (RFC). I found that the logistic regression model gave the best performed measured in terms of ROC-AUC score with 10-fold cross validation. The model is also much faster than SVC and RFC models measured in terms of total running time for model fitting.
 
 
 ### Putting It All Together
