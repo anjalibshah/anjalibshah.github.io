@@ -70,3 +70,7 @@ The final product (outcome of my analyses) focuses on using the following three 
 1. Mann-Whitney U test to determine the optimal number of patients per provider
 2. Forecasting patient volume to have enough providers onsite to maintain 	optimum patients per provider ratios
 3. Logistic regression model to determine the probability of receiving good scores by day of the week and patients per provider ratio.
+
+Insights derived thorugh this project should help the startup advise its clients on optimum management of patient per provider ratios leading to better healthcare experience for patients. 
+
+I implemented this project using Python - Pandas for data processing and Scikit-learn for modeling. [Here](https://github.com/anjalibshah/insight-data-science-project.git "Insight Project Github Repository") is the link to my github repository for this project's source code.
