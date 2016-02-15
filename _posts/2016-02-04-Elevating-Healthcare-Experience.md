@@ -61,11 +61,15 @@ Scatterplot distribution of the NPS by patients seen per day as shown in the fig
 
 Visualizing the probability density led me to study the differences in distribution of the good and bad scores and found statistically significant results (p-value = 0.000). Due to lack of perfect normality in the underlying distribution, I used non-parametric Mann-Whitney U test to compare differences in measure of central tendency (mean) between the two groups.  
 
+While working on forecasting patient volume using time series analysis, I used the auto-correlation function (ACF) and partial auto-correlation function (PACF) plots to derive order for the ARIMA models.  
 
 ![ACFandPACFPlots.png]({{site.baseurl}}/images/ACFandPACFPlots.png)
 
+Following is the example of a suboptimal fit for the data. I used the arma_order_select_ic wrapper function from Statsmodel package to indicate a good choice for the p and q terms of the ARIMA model. 
 
 ![ARIMASuboptimal.png]({{site.baseurl}}/images/ARIMASuboptimal.png)
+
+Following the results from executing arma_order_select_ic function and using an iterative process, I was able to fit the model with p=2 and q=0 for forecasting patient volume using monthly data. Similarly, I was able to fit the model using p=2 and q=1 for forecasting patient volume using weekly data. I used d=1 to obatin the first difference of the patient volume data, which helped fit the model on stationary time series and significantly reduced prediction errors.
 
 
 ![PredictiveModelComparison.png]({{site.baseurl}}/images/PredictiveModelComparison.png)
