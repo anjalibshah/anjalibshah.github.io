@@ -69,6 +69,9 @@ Following is the example of a suboptimal fit for the data. I used the arma_order
 
 ![ARIMASuboptimal.png]({{site.baseurl}}/images/ARIMASuboptimal.png)
 
+_Please note that some of the numbers have been obfuscated in the figures above to protect sensitive information about clients of the startup._
+
+
 Following the results from executing arma_order_select_ic function and using an iterative process, I was able to fit the model with p=2 and q=0 for forecasting patient volume using monthly data. Similarly, I was able to fit the model using p=2 and q=1 for forecasting patient volume using weekly data. I used d=1 to obatin the first difference of the patient volume data, which helped fit the model on stationary time series and significantly reduced prediction errors.
 
 
