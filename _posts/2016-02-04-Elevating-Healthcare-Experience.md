@@ -11,9 +11,10 @@ tags:
 
 
 
+
 ### Problem: What is the optimal number of patients a provider should see in a day?
 
-For my Insight project, I wanted to work on solving a common problem that we encounter often. During out patient visits, many of us end up waiting for a long time to see the doctor. Ideally, patients should get to spend more time with the doctor in the exam room, which can elevate the overall healthcare experience. 
+For my Insight project, I wanted to work on solving a common problem that we often encounter. During outpatient visits, many of us end up waiting for a long time to see the doctor. Ideally, patients should get to spend more time with the doctor in the exam room, which can elevate the overall healthcare experience. 
 
 This leads us to the question of my problem statement. How many patients should providers (doctors) see in a day? This is to make sure patients do not feel rushed, receive adequate time and attentive care from their providers and respond with high rating scores on feedback survey questions.
 
@@ -35,7 +36,7 @@ Net promoter score (NPS) is based on raw score provided by patients on feedback 
 
 I used kernel density estimation with Gaussian kernel to study the underlying distribution of NPS percentages by patients seen per day metric. It helped me visualize that probability density of NPS by number of patients seen in a day. I performed binarization of NPS to classify percentages greater than or equal to 90 as good scores and those below 90 as bad scores.
 
-I plotted the distribution of good scores versus bad scores by patients seen per day. By performing Mann-Whitney U test, I was able to see a statistically significant difference between the means of the two groups. At 95% confidence level about the mean, I was able to find the interval for number of patients a provider should see in a day for good scores and also the interval for bad scores. This helped me arrive at a solution for the optimal number of patients a provider should see in a day without seeing a considerable drop in the scores.
+I plotted the distribution of good scores versus bad scores by patients seen per day. By performing Mann-Whitney U test, I was able to see a statistically significant difference between the distributions of the two groups. At 95% confidence level about the mean, I was able to find the interval for number of patients a provider should see in a day for good scores and also the interval for bad scores. This helped me arrive at a solution for the optimal number of patients a provider should see in a day without seeing a considerable drop in the scores.
 
 ![Histogram_volume_nps_2.png]({{site.baseurl}}/images/Histogram_volume_nps_2.png)
 
@@ -50,7 +51,7 @@ In order to maintain the optimal number of patients per provider, it is importan
 ![ARMAWeekModified.png]({{site.baseurl}}/images/ARMAWeekModified.png)
 
 
-_Please note that some of the numbers and actual timelines have been obfuscated in the figures above to protect sensitive information about clients of the startup._
+_Please note that some of the numbers have been obfuscated in the figures above to protect sensitive information about clients of the startup._
 
 ### Deep Dive: What led me to the choice of models for my analyses?
 
