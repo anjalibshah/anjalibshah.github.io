@@ -68,7 +68,8 @@ Visualizing the probability density led me to study the differences in distribut
 ![ARIMASuboptimal.png]({{site.baseurl}}/images/ARIMASuboptimal.png)
 
 
-![ModelComparison.png]({{site.baseurl}}/images/ModelComparison.png)
+![PredictiveModelComparison.png]({{site.baseurl}}/images/PredictiveModelComparison.png)
+
 
 
 
