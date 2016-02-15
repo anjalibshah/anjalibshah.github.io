@@ -46,9 +46,9 @@ While working on the problem, I noticed a difference in the percentage of good s
 
 In order to maintain the optimal number of patients per provider, it is important to be able to gauge expected patient volumes and have optimal number of providers on site. In order to forecast patient volume, I used time series analysis to study past temporal trends in patient volume. Using auto regressive (AR) as well as auto regressive and moving average (ARMA) models, I was able to perform 1-step forecasting of volume by month and volume by week respectively with a mean absolute percentage error of about 17%.
 
-![ARMonthModified.png]({{site.baseurl}}/images/ARMonthModified.png)
+![ARIMAMonthly.png]({{site.baseurl}}/images/ARIMAMonthly.png)
 
-![ARMAWeekModified.png]({{site.baseurl}}/images/ARMAWeekModified.png)
+![ARIMAWeekly.png]({{site.baseurl}}/images/ARIMAWeekly.png)
 
 
 _Please note that some of the numbers have been obfuscated in the figures above to protect sensitive information about clients of the startup._
@@ -60,6 +60,15 @@ Scatterplot distribution of the NPS by patients seen per day as shown in the fig
 ![VisualizingData.png]({{site.baseurl}}/images/VisualizingData.png)
 
 Visualizing the probability density led me to study the differences in distribution of the good and bad scores and found statistically significant results (p-value = 0.000). Due to lack of perfect normality in the underlying distribution, I used non-parametric Mann-Whitney U test to compare differences in measure of central tendency (mean) between the two groups.  
+
+
+![ACFandPACFPlots.png]({{site.baseurl}}/images/ACFandPACFPlots.png)
+
+
+![ARIMASuboptimal.png]({{site.baseurl}}/images/ARIMASuboptimal.png)
+
+
+![ModelComparison.png]({{site.baseurl}}/images/ModelComparison.png)
 
 
 
