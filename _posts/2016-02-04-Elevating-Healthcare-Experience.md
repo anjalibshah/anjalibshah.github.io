@@ -39,7 +39,7 @@ I used kernel density estimation with Gaussian kernel to study the underlying di
 
 I plotted the distribution of good scores versus bad scores by patients seen per day. By performing Mann-Whitney U test, I was able to see a statistically significant difference between the distributions of the two groups. At 95% confidence level about the mean, I was able to find the interval for number of patients a provider should see in a day for good scores and also the interval for bad scores. This helped me arrive at a solution for the optimal number of patients a provider should see in a day without seeing a considerable drop in the scores.
 
-<img src="{{site.baseurl}}/images/Histogram_volume_nps_2.png" width="500">
+<img src="{{site.baseurl}}/images/Histogram_volume_nps_2.png" width="450">
 
 While working on the problem, I noticed a difference in the percentage of good scores to bad scores by day of the week. Combining day of the week information with the patients seen per day, I was able to build a logistic regression model to predict the chance of getting good scores with 67% accuracy. With 50% being chance, the model performs reasonably better than chance.
 
