@@ -80,7 +80,9 @@ Following the results from executing arma_order_select_ic function and using an 
 
 Before settling on the use of logistic regression model to classify scores into good and bad based on day-of-week and patients-per-provider features, I tried other classification models.
 
-![PredictiveModelComparison.png]({{site.baseurl}}/images/PredictiveModelComparison.png)
+<p align="center">
+<img src="{{site.baseurl}}/images/PredictiveModelComparison.png" width="450">
+</p>
 
 I compared the total running time for model fitting using logistic regression, gaussian naive bayes, linear support vector classification (SVC) and random forest classification (RFC). I found that the logistic regression model gave the best performed measured in terms of ROC-AUC score with 10-fold cross validation. The model is also much faster than SVC and RFC models measured in terms of total running time for model fitting.
 
